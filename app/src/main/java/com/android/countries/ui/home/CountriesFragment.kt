@@ -1,4 +1,4 @@
-package com.android.countries.views
+package com.android.countries.ui.home
 
 import com.android.countries.R
 import com.android.countries.databinding.FragmentCountriesBinding
@@ -15,6 +15,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.countries.MainActivity
+import com.android.countries.ui.details.CountriesDetailsFragment
+import com.android.countries.ui.CountryClickListener
 import kotlinx.android.synthetic.main.fragment_countries.*
 import org.koin.android.viewmodel.ext.android.viewModel
 

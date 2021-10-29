@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="com.android.countries.views.CountriesViewModel" />
+            type="com.android.countries.ui.home.CountriesViewModel" />
 
     </data>
 

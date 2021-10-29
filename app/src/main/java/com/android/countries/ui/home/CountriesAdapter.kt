@@ -1,4 +1,4 @@
-package com.android.countries.views
+package com.android.countries.ui.home
 
 import com.android.countries.R
 import com.android.countries.databinding.CountriesRowBinding
@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.android.countries.ui.CountryClickListener
 
 
 class CountriesAdapter(val context: Context?,

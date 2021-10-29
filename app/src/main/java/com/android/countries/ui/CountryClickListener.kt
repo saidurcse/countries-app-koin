@@ -1,4 +1,4 @@
-package com.android.countries.views
+package com.android.countries.ui
 
 import com.android.countries.db.model.CountriesData
 

@@ -1,6 +1,6 @@
 package com.android.countries.di
 
-import com.android.countries.views.CountriesViewModel
+import com.android.countries.ui.home.CountriesViewModel
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

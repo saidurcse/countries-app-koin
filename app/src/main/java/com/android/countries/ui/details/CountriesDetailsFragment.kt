@@ -1,4 +1,4 @@
-package com.android.countries.views
+package com.android.countries.ui.details
 
 import com.android.countries.R
 import com.android.countries.databinding.FragmentCountryDetailsBinding
