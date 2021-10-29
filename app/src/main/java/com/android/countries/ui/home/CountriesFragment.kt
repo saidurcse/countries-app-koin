@@ -26,7 +26,6 @@ class CountriesFragment : Fragment(), CountryClickListener {
     private lateinit var countriesAdapter: CountriesAdapter
     private lateinit var mViewDataBinding: FragmentCountriesBinding
 
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         mViewDataBinding  = DataBindingUtil.inflate(inflater,
             R.layout.fragment_countries, container, false)
@@ -47,7 +46,6 @@ class CountriesFragment : Fragment(), CountryClickListener {
                 countriesAdapter.setCountries(it)
             }
         })
-
     }
 
     private fun removeBackButton() {

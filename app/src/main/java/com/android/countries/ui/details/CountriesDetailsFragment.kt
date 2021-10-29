@@ -28,7 +28,6 @@ class CountriesDetailsFragment : Fragment() {
     private var country: CountriesData? = null
     private lateinit var mViewDataBinding: FragmentCountryDetailsBinding
 
-
     override fun onAttach(context: Context) {
         super.onAttach(context)
         country =  arguments?.getParcelable("country_data_row")
@@ -58,5 +57,4 @@ class CountriesDetailsFragment : Fragment() {
         (activity as? AppCompatActivity)?.supportActionBar?.setDisplayHomeAsUpEnabled(true)
         (activity as? AppCompatActivity)?.supportActionBar?.setHomeButtonEnabled(true)
     }
-    
 }

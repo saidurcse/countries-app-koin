@@ -1,6 +1,5 @@
 package com.android.countries
 
-import com.android.countries.di.*
 import android.app.Application
 import com.android.countries.di.*
 import org.koin.android.ext.koin.androidContext
@@ -11,7 +10,7 @@ class CountiesApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-      startKoin {
+        startKoin {
             androidLogger()
             androidContext(this@CountiesApplication)
             modules(

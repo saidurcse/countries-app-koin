@@ -10,21 +10,17 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.android.countries.ui.CountryClickListener
 
-
-class CountriesAdapter(val context: Context?,
-    val clickListener: CountryClickListener
-) : RecyclerView.Adapter<CountriesAdapter.CountriesViewHolder>() {
+class CountriesAdapter(val context: Context?, val clickListener: CountryClickListener) :
+    RecyclerView.Adapter<CountriesAdapter.CountriesViewHolder>() {
 
     var countriesList: List<CountriesData> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CountriesViewHolder {
         val viewBinding: CountriesRowBinding = DataBindingUtil.inflate(
             LayoutInflater.from(parent.context),
-            R.layout.countries_row, parent, false
-        )
+            R.layout.countries_row, parent, false)
         return CountriesViewHolder(viewBinding)
     }
-
 
     override fun getItemCount(): Int {
         return countriesList.size
@@ -48,7 +44,6 @@ class CountriesAdapter(val context: Context?,
             viewBinding.countryClickInterface = clickListener
         }
     }
-
 }
 
 

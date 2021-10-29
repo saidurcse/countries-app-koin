@@ -21,6 +21,4 @@ val databaseModule = module {
 
     single { provideDatabase(androidApplication()) }
     single { provideCountriesDao(get()) }
-
-
 }

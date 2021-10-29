@@ -2,14 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
     <data>
-
         <import type="android.view.View" />
-
         <variable
             name="country"
             type="com.android.countries.db.model.CountriesData" />
-
         <variable
             name="currency"
             type="String" />
@@ -18,7 +16,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
         <TextView
             android:id="@+id/header_country_details"
@@ -137,7 +134,7 @@
         <TextView
             android:id="@+id/country_language"
             style="@style/normal_text"
-            android:text="@{country.nativeLanguage)}"
+            android:text="@{country.nativeLanguage}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -147,7 +144,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/country_language_text"
             app:layout_constraintHorizontal_bias="0.0" />
-
 
         <TextView
             android:id="@+id/country_captial_text"
