@@ -10,7 +10,7 @@ A simple project for The Movie DB based on Kotlin MVVM with Android Jetpack Navi
 
 ![alt text](https://github.com/saidurcse/movie-db-kotlin/blob/main/app/src/main/assets/home.PNG)
 
-## Build Process
+<!## Build Process
 
 Add your Movie db api url and image url with API key in local.properties file.
 
@@ -18,11 +18,11 @@ api_url=https://api.themoviedb.org/
 
 image_url=https://image.tmdb.org/t/p/w780
 
-api_key=YOUR_API_KEY
+api_key=YOUR_API_KEY-->
 
 ## Development process
 
-Based on Test-driven development.
+<!Based on Test-driven development.-->
 
     1) API Service -> API Service Unit Test with api response mock files
     2) ViewModel -> ViewModel Unit Test
