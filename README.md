@@ -8,9 +8,9 @@
 
 A simple project for The Movie DB based on Kotlin MVVM with Android Jetpack Navigation clean architecture.
 
-![alt text](https://github.com/saidurcse/movie-db-kotlin/blob/main/app/src/main/assets/home.PNG)
+![alt text](https://github.com/saidurcse/countries-app-koin/tree/master/app/src/main/assets/home.PNG)
 
-<!## Build Process
+<!--## Build Process
 
 Add your Movie db api url and image url with API key in local.properties file.
 
