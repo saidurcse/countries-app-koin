@@ -1,4 +1,4 @@
-# Movie-db-kotlin
+# Countries-App-Koin
 <snippet>
   <content><![CDATA[
 # ${1:Project Name}
