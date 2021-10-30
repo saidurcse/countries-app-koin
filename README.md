@@ -8,7 +8,7 @@
 
 A simple project for The Movie DB based on Kotlin MVVM with Android Jetpack Navigation clean architecture.
 
-![alt text](https://github.com/saidurcse/countries-app-koin/tree/master/app/src/main/assets/home.png)
+![alt text](https://github.com/saidurcse/countries-app-koin/blob/master/app/src/main/assets/home.png)
 
 <!--## Build Process
 
