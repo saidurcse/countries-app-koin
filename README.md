@@ -56,6 +56,7 @@ api_key=YOUR_API_KEY-->
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
+<!--
 ## License
 
 ```
@@ -81,6 +82,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
-
+-->
 </content>
 </snippet>
