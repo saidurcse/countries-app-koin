@@ -66,10 +66,7 @@ class CountriesViewModelTest {
         runBlocking {
             launch(Dispatchers.Main) {
                 // given
-                val dataResponse = MutableLiveData<List<CountriesData>>()
-                dataResponse.value = getMockApiData()
-
-                Mockito.`when`(repository.getAllCountries()).thenReturn(AppResult.Success(getMockApiData()))
+                Mockito.`when`(repository.getAllCountries()).thenReturn(AppResult.Success(mockData))
 
                 // when
                 viewModel.getAllCountries()
@@ -80,7 +77,7 @@ class CountriesViewModelTest {
                 verify(countriesListObserver).onChanged(observeMovieListCapture.capture())
 
                 Assert.assertEquals(
-                    getMockApiData(),
+                    mockData,
                     observeMovieListCapture.firstValue
                 )
 
@@ -113,25 +110,25 @@ class CountriesViewModelTest {
         }
     }
 
-    private fun getMockApiData() = listOf(CountriesData(
+    private val mockData = listOf(CountriesData(
         1,
-        name = Name("Afghanistan", "Islamic Republic of Afghanistan", null),
+        name = Name("USA", "USA", null),
         tld =  mockTldData(),
-        "AF",
+        "US",
         "004",
-        "AFG",
+        "US",
         currency = mockCurrencyData(),
         callingCode = mockCallingCodeData(),
-        "kabul",
+        "Wasington DC",
         altSpellings = mockAltSpellingData(),
         "0",
-        "Asia",
-        "Southeast Asia",
+        "America",
+        "America",
         "pus",
-        languages = Languages(1, "Dari", "Pashto", "Turkmen","Dari", "Pashto", "Turkmen",
-            "Dari", "Pashto", "Turkmen","Dari", "Pashto", "Turkmen","Dari", "Pashto", "Turkmen"),
-        translations =  Translations(1, "Affganistan","Affganistan","Affganistan","Affganistan","Affganistan",
-            "Affganistan","Affganistan","Affganistan","Affganistan","Affganistan"),
+        languages = Languages(1, "English", "English", "English","English", "English", "English",
+            "English", "English", "English","English", "English", "English","English", "English", "English"),
+        translations =  Translations(1, "English","English","English","English","English",
+            "English","English","English","English","English"),
         "Ålandish",
         borders = null,
         652230.00
@@ -153,8 +150,8 @@ class CountriesViewModelTest {
             "Bangla",
             languages = Languages(1, "Dari", "Pashto", "Turkmen","Dari", "Pashto", "Turkmen",
                 "Dari", "Pashto", "Turkmen","Dari", "Pashto", "Turkmen","Dari", "Pashto", "Turkmen"),
-            translations =  Translations(1, "Affganistan","Affganistan","Affganistan","Affganistan","Affganistan",
-                "Affganistan","Affganistan","Affganistan","Affganistan","Affganistan"),
+            translations =  Translations(1, "Bangali","Bangali","Bangali","Bangali","Bangali",
+                "Bangali","Bangali","Bangali","Bangali","Bangali"),
             "BD",
             borders = null,
             852230.00
